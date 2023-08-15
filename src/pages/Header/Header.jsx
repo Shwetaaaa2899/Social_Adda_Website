@@ -53,7 +53,7 @@ const Header = () => {
           <li className="item">
             <Link
               target="_blank"
-              to="https://github.com/Shwetaaaa2899/socialmedia"
+              to=" https://github.com/Shwetaaaa2899/Social_Adda_Website"
             >
               <AiFillGithub />
             </Link>
@@ -70,16 +70,6 @@ const Header = () => {
             )}
           </li>
         </ul>
-
-        {/* <div className="item"></div> */}
-        {/* <div className = "item" onClick = {() => console.log("clicked")}> <NavLink to ="/mock">
-  mock</NavLink> </div> */}
-        {/* <div className = "item"> <NavLink to ="/login">Login</NavLink></div> */}
-        {/* <div className = "item"> <NavLink to ="/signup">SignUp</NavLink></div> */}
-        {/* <div className="item">{isLoggedIn && token && userInfo?.firstName}</div>
-        <div className="item" onClick={logoutHandler}>
-          {isLoggedIn && token && <NavLink to="/">Logout</NavLink>}
-        </div> */}
       </nav>
     </div>
   );
