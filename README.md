@@ -14,7 +14,7 @@
 •	Create a Post - for user to add a new post.<br />
 •	Like/Unlike  a post<br />
 •	Edit & Delete Post<br />
-•	g.Follow/Unfollow<br />
+•	Follow/Unfollow<br />
 •	User Profile Page -- Add Avatar -- Add Bio -- Add Portfolio URL<br />
 •	Bookmark Page - User can bookmark any post and can be viewed in BookMark Page<br />
 •	 Like Page -   User can like any post and can be viewed in BookMark Page<br />
