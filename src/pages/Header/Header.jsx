@@ -16,40 +16,30 @@ import { MdOutlineDarkMode } from "react-icons/md";
 // light mode
 import { MdLightMode } from "react-icons/md";
 import { FiLogOut } from "react-icons/fi";
+import logo from "./logo.png"
 const Header = () => {
   const { token, isLoggedIn, userInfo, logoutHandler } = useAuth();
   const [modal, setModal] = useState(false);
   {
     /* --header logic */
   }
-
+  const username = userInfo?.firstName
   return (
     <div className="header">
       <nav>
-        <div className="logo">Logo</div>
+        <div className="logo">
+          <h2>Social Adda</h2></div>
+
         <ul className="nav-right">
-          {/* <li className="item username"> */}
 
-          {/* <p> {   Hi  - isLoggedIn && token &&  
-                 userInfo?.firstName}
-              
-                }
-                </p> */}
-          {/* </li> */}
 
-          {isLoggedIn && token && (
-            <h4>
-              Hello!{" "}
-              {/* <span
-                className="navbar_username"
-                onClick={() =>
-                  navigate(`/userprofile/${authState?.user?.username}`)
-                }
-              > */}
-              {userInfo?.firstName}
-              {/* </span> */}
-            </h4>
-          )}
+
+
+          <li className="item">{isLoggedIn && token &&
+            <h2>   Hello! {username}</h2>}
+          </li>
+
+
           <li className="item">
             <Link
               target="_blank"
@@ -58,9 +48,7 @@ const Header = () => {
               <AiFillGithub />
             </Link>
           </li>
-          <li className="item">
-            <MdLightMode />
-          </li>
+
 
           <li className="item">
             {isLoggedIn && token && (
@@ -71,7 +59,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-    </div>
+    </div >
   );
 };
 export default Header;
