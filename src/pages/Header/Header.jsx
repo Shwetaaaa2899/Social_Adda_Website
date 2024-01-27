@@ -43,7 +43,8 @@ const Header = () => {
           <li className="item">
             <Link
               target="_blank"
-              to=" https://github.com/Shwetaaaa2899/Social_Adda_Website"
+              to="https://github.com/Shwetaaaa2899/Social_Adda_Website"
+
             >
               <AiFillGithub />
             </Link>
